@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-02-15T15:01:54.984755",
+  "tests_passed": 14,
+  "tests_total": 14,
+  "success_rate": "100.0%",
+  "bugs_found": [
+    {
+      "bug_id": "BUG-006",
+      "description": "Men filter returns women's products (categories swapped)",
+      "test_result": "CONFIRMED",
+      "timestamp": "2026-02-15T15:01:51.059571"
+    },
+    {
+      "bug_id": "BUG-006-B",
+      "description": "Women filter returns men's products (categories swapped)",
+      "test_result": "CONFIRMED",
+      "timestamp": "2026-02-15T15:01:51.725857"
+    },
+    {
+      "bug_id": "BUG-007",
+      "description": "Price sorting uses string comparison instead of numeric",
+      "test_result": "CONFIRMED",
+      "timestamp": "2026-02-15T15:01:52.496528"
+    },
+    {
+      "bug_id": "BUG-021",
+      "description": "User1 and User2 cart sessions are swapped",
+      "test_result": "CONFIRMED",
+      "timestamp": "2026-02-15T15:01:54.983527"
+    }
+  ]
+}

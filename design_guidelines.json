@@ -1,0 +1,131 @@
+{
+  "identity": {
+    "persona": "E1",
+    "archetype": "The Performance Pro",
+    "tone": "Athletic, Bold, Unapologetic, Precision",
+    "mission": "Create a high-impact, Nike-inspired sports commerce experience that feels premium but contains deliberate flaws for a bug-hunting challenge."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Oswald, 'Anton', 'Barlow Condensed', sans-serif",
+      "weight": "700",
+      "style": "Uppercase, Tight Tracking",
+      "usage": "Use for all major headings (h1, h2, h3). Must be impactful and often oversized."
+    },
+    "body": {
+      "font_family": "Inter, 'Helvetica Neue', sans-serif",
+      "weight": "400",
+      "usage": "Clean, legible, high readability for product descriptions and UI text."
+    },
+    "scale": {
+      "h1": "text-6xl md:text-8xl font-black uppercase tracking-tighter",
+      "h2": "text-4xl md:text-6xl font-bold uppercase tracking-tight",
+      "h3": "text-2xl md:text-3xl font-bold uppercase",
+      "body": "text-base md:text-lg leading-relaxed"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#000000",
+      "secondary": "#FFFFFF",
+      "accent": "#D0FF00",
+      "accent_hover": "#B3DB00",
+      "text_primary": "#000000",
+      "text_secondary": "#555555",
+      "background": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "error": "#FF3B30",
+      "success": "#34C759"
+    },
+    "usage_rules": {
+      "background": "Primary background is White (#FFFFFF). Use Light Gray (#F5F5F5) for secondary sections.",
+      "text": "Headings are always Black (#000000). Body text is Dark Gray (#333333).",
+      "buttons": "Primary CTAs are Black with White text OR Accent (Volt) with Black text.",
+      "borders": "1px solid #E5E5E5 for subtle separation."
+    }
+  },
+  "visual_enhancers": {
+    "style": "Neo-Brutalist Sports",
+    "features": [
+      "Massive Typography",
+      "High Contrast Black & White Imagery",
+      "Sharp Edges (No rounded corners on buttons/cards)",
+      "Parallax Scrolling effects",
+      "Sticky Elements (Sidebar, Filters)"
+    ]
+  },
+  "layout_strategies": {
+    "grid_system": "Bento Grid (Mode A) for categories. 3-Column Masonry for products.",
+    "spacing": "Generous. Use p-8 to p-24. Do not clutter.",
+    "containers": "Max-width 1440px for main content. Full width for Hero sections."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-black text-white hover:bg-zinc-800 uppercase font-bold px-8 py-4 rounded-none tracking-widest",
+      "secondary": "border-2 border-black text-black hover:bg-black hover:text-white uppercase font-bold px-8 py-4 rounded-none tracking-widest",
+      "accent": "bg-[#D0FF00] text-black hover:bg-[#B3DB00] uppercase font-bold px-8 py-4 rounded-none tracking-widest"
+    },
+    "cards": {
+      "product": "group relative bg-gray-50 aspect-[3/4] overflow-hidden hover:shadow-xl transition-all duration-300",
+      "category": "relative h-[400px] w-full overflow-hidden bg-black"
+    },
+    "inputs": {
+      "style": "border-b-2 border-black bg-transparent px-0 py-2 focus:outline-none focus:border-[#D0FF00] font-bold text-xl placeholder:text-gray-400 rounded-none"
+    }
+  },
+  "image_assets": {
+    "hero": [
+      "https://images.unsplash.com/photo-1723186051179-69b1dfe2a1f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxhdGhsZXRlJTIwc3ByaW50aW5nJTIwdHJhY2slMjBoaWdoJTIwY29udHJhc3R8ZW58MHx8fHwxNzcxMTY3MjU5fDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1629570335546-81c3b2730322?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxhdGhsZXRlJTIwc3ByaW50aW5nJTIwdHJhY2slMjBoaWdoJTIwY29udHJhc3R8ZW58MHx8fHwxNzcxMTY3MjU5fDA&ixlib=rb-4.1.0&q=85"
+    ],
+    "basketball": [
+      "https://images.unsplash.com/photo-1635949602587-7c970c33ffb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHx1cmJhbiUyMGJhc2tldGJhbGwlMjBwbGF5ZXIlMjBkdW5raW5nfGVufDB8fHx8MTc3MTE2NzI2MHww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1762770663467-97ccd74899b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHx1cmJhbiUyMGJhc2tldGJhbGwlMjBwbGF5ZXIlMjBkdW5raW5nfGVufDB8fHx8MTc3MTE2NzI2MHww&ixlib=rb-4.1.0&q=85"
+    ],
+    "products": [
+      "https://images.unsplash.com/photo-1610664676282-55c8de64f746?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxuaWtlJTIwcnVubmluZyUyMHNob2VzJTIwcHJvZHVjdCUyMHNob3QlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzcxMTY3MjczfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1680254418556-3980c19d4304?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxuaWtlJTIwcnVubmluZyUyMHNob2VzJTIwcHJvZHVjdCUyMHNob3QlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzcxMTY3MjczfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1618354691714-7d92150909db?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxzcG9ydHN3ZWFyJTIwZ3ltJTIwdC1zaGlydCUyMHByb2R1Y3QlMjBzaG90fGVufDB8fHx8MTc3MTE2NzI3NHww&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "implementation_challenges_for_bugs": {
+    "note": "These bugs MUST be implemented deliberately. They are the core feature of this challenge.",
+    "list": [
+      "1. Login: Username check is strictly case-sensitive (e.g., 'user1' works, 'User1' fails).",
+      "2. Login: Password visibility toggle icon changes, but input type remains 'password' (dots don't reveal).",
+      "3. Navigation: Cart icon count updates only after page refresh, not immediately via state.",
+      "4. Mobile Menu: Hamburger menu opens but close button is hidden (z-index issue).",
+      "5. Hero Section: 'Shop Now' CTA button z-index is lower than the background overlay, making it unclickable.",
+      "6. Product Filters: Selecting 'Men' category triggers the 'Women' filter in the backend logic.",
+      "7. Sorting: 'Price Low-High' sorts by string value (e.g., '100' comes before '20').",
+      "8. Search Bar: Pressing 'Enter' triggers a page reload instead of submitting the search query.",
+      "9. Product Gallery: The second thumbnail image in the product detail page is a broken link (404).",
+      "10. Size Selection: Clicking a size button updates the state but does not apply the 'active' visual style (user doesn't know it's selected).",
+      "11. Add to Cart: Toast notification displays 'Error adding to cart' message even when the action is successful.",
+      "12. Cart Quantity: Input field allows negative numbers (e.g., -1 items).",
+      "13. Cart Total: Subtotal calculation logic ignores the last item in the list.",
+      "14. Checkout Form: Zip code field accepts letters and special characters.",
+      "15. Checkout Options: 'Billing same as shipping' checkbox toggle does nothing when clicked.",
+      "16. Payment Form: Credit card number input does not auto-format (no spaces between groups).",
+      "17. Profile: 'Save Changes' button lacks an onClick handler (dead button).",
+      "18. Footer: The 'Returns & Exchanges' link points to a 404 page.",
+      "19. Responsive Grid: Product cards on mobile view are too narrow (missing min-width or flex-wrap).",
+      "20. Accessibility: Main CTA buttons have `outline: none` on focus, making keyboard navigation impossible."
+    ]
+  },
+  "instructions_to_main_agent": {
+    "step_1": "Implement the full E-commerce flow (Login, Home, Product, Cart, Checkout) using React, Tailwind, and Shadcn.",
+    "step_2": "Apply the 'Performance Pro' design system (Black/White/Volt) strictly.",
+    "step_3": "While building, deliberately implement the 20 bugs listed in 'implementation_challenges_for_bugs'. Do not fix them.",
+    "step_4": "Ensure the UI looks professional and 'Nike-like' despite the functional bugs. The design must deceive the user into thinking it's perfect.",
+    "step_5": "Use the provided image URLs for content.",
+    "step_6": "Create a `bugs.md` file in the root listing these bugs for the user (the 'answer key')."
+  },
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds. Use solid Black or White.",
+    "Do not center everything. Use strong left alignment for text.",
+    "Use massive font sizes for headers.",
+    "Ensure high contrast.",
+    "Use `data-testid` on all interactive elements."
+  ]
+}
