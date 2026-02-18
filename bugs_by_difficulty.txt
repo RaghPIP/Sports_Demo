@@ -1,21 +1,28 @@
-Easy - Login: Case-Sensitive Username
-Easy - Login: Password Visibility Toggle Broken
-Easy - Mobile Menu: Close Button Hidden (Z-Index Issue)
-Easy - Hero Section: "Shop Now" Button Unclickable
-Easy - Search Bar: Enter Key Reloads Page
-Easy - Product Gallery: Second Thumbnail is Broken Link
-Easy - Size Selection: No Visual Feedback
-Easy - Cart Quantity: Allows Negative Numbers
-Easy - Footer: Returns Link Points to 404 Page
-Medium - Login: user1 Accepts Multiple Passwords
-Medium - Home: Cart Count Updates Only on Page Refresh
-Medium - Product Filters: Men/Women Categories Swapped
-Medium - Sorting: Price Sorts by String Instead of Number
-Medium - Add to Cart: Success Shows Error Toast
-Medium - Cart Total: Subtotal Ignores Last Item
-Medium - Checkout: "Billing Same as Shipping" Checkbox Does Nothing
-Medium - Cart Badge: Count Increments But Cart Appears Empty Until Reload
-Medium - Responsive Grid: Mobile Product Cards Too Narrow
-Hard - Payment Form: Card Number Drops First Digit
-Hard - Profile: Save Changes Button Has No onClick Handler
-Hard - mobile view hamburger menu is not working
+CSAU-BlackOut-Set1
+
+Easy
+1. Login: Case-Sensitive Username — /app/backend/server.py
+2. Login: Password Visibility Toggle Broken — /app/frontend/src/pages/Login.js
+3. Mobile Menu: Close Button Hidden (Z-Index Issue) — /app/frontend/src/pages/Home.js
+4. Hero Section: "Shop Now" Button Unclickable — /app/frontend/src/pages/Home.js
+5. Search Bar: Enter Key Reloads Page — /app/frontend/src/pages/Home.js
+6. Product Gallery: Second Thumbnail is Broken Link — /app/backend/server.py
+7. Size Selection: No Visual Feedback — /app/frontend/src/pages/ProductDetail.js
+8. Cart Quantity: Allows Negative Numbers — /app/frontend/src/pages/Cart.js, /app/frontend/src/pages/ProductDetail.js
+9. Footer: Returns Link Points to 404 Page — /app/frontend/src/pages/Home.js
+
+Medium
+1. Login: user1 Accepts Multiple Passwords — /app/backend/server.py
+2. Home: Cart Count Updates Only on Page Refresh — /app/frontend/src/pages/Home.js
+3. Product Filters: Men/Women Categories Swapped — /app/backend/server.py
+4. Sorting: Price Sorts by String Instead of Number — /app/backend/server.py
+5. Add to Cart: Success Shows Error Toast — /app/frontend/src/pages/ProductDetail.js
+6. Cart Total: Subtotal Ignores Last Item — /app/frontend/src/pages/Cart.js
+7. Checkout: "Billing Same as Shipping" Checkbox Does Nothing — /app/frontend/src/pages/Checkout.js
+8. Cart Badge: Count Increments But Cart Appears Empty Until Reload — /app/frontend/src/pages/ProductDetail.js, /app/frontend/src/pages/Cart.js
+9. Responsive Grid: Mobile Product Cards Too Narrow — /app/frontend/src/pages/Home.js
+
+Hard
+1. Payment Form: Card Number Drops First Digit — /app/frontend/src/pages/Checkout.js
+2. Profile: Save Changes Button Has No onClick Handler — /app/frontend/src/pages/Profile.js
+3. mobile view hamburger menu is not working — /app/frontend/src/pages/Home.js
