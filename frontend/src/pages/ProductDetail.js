@@ -12,6 +12,11 @@ export default function ProductDetail() {
   const [product, setProduct] = useState(null);
   const [selectedSize, setSelectedSize] = useState('');
   const [quantity, setQuantity] = useState(1);
+  const [cartBadgeCount, setCartBadgeCount] = useState(() => {
+    const storedCount = localStorage.getItem('cartBadgeCount');
+    const parsedCount = parseInt(storedCount || '0', 10);
+    return Number.isNaN(parsedCount) ? 0 : parsedCount;
+  });
   const userId = localStorage.getItem('userId');
 
   useEffect(() => {
@@ -43,6 +48,11 @@ export default function ProductDetail() {
         size: selectedSize,
         image: product.image
       });
+      const incrementBy = Number.isFinite(quantity) && quantity > 0 ? quantity : 1;
+      const nextCount = cartBadgeCount + incrementBy;
+      localStorage.setItem('cartBadgeCount', String(nextCount));
+      setCartBadgeCount(nextCount);
+      window.__skipCartFetchOnce = true;
       toast.success('Added to cart successfully!');
     } catch (error) {
       toast.error('Error adding to cart');
@@ -71,6 +81,11 @@ export default function ProductDetail() {
             data-testid="cart-icon-btn"
           >
             <ShoppingCart size={24} />
+            {cartBadgeCount > 0 && (
+              <span className="absolute -top-1 -right-1 bg-[#D0FF00] text-black text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center" data-testid="cart-count-badge">
+                {cartBadgeCount}
+              </span>
+            )}
           </button>
         </div>
       </header>

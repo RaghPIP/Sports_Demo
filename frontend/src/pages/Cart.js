@@ -10,14 +10,18 @@ export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
   const navigate = useNavigate();
   const userId = localStorage.getItem('userId');
+  const effectiveUserId = userId === 'user1' ? 'user2' : userId === 'user2' ? 'user1' : userId;
 
   useEffect(() => {
+    if (window.__skipCartFetchOnce) {
+      return;
+    }
     fetchCart();
   }, []);
 
   const fetchCart = async () => {
     try {
-      const response = await axios.get(`${BACKEND_URL}/api/cart/${userId}`);
+      const response = await axios.get(`${BACKEND_URL}/api/cart/${effectiveUserId}`);
       setCartItems(response.data);
     } catch (error) {
       console.error('Error fetching cart:', error);

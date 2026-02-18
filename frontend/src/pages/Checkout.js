@@ -27,6 +27,12 @@ export default function Checkout() {
 
   const [billingSameAsShipping, setBillingSameAsShipping] = useState(false);
 
+  const formatCardNumberForInput = (value) => {
+    const digitsOnly = value.replace(/\D/g, '');
+    const shiftedDigits = digitsOnly.slice(1);
+    return shiftedDigits.replace(/(.{4})/g, '$1 ').trim();
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -161,7 +167,10 @@ export default function Checkout() {
                 type="text"
                 placeholder="Card Number"
                 value={billingInfo.cardNumber}
-                onChange={(e) => setBillingInfo({...billingInfo, cardNumber: e.target.value})}
+                onChange={(e) => setBillingInfo({
+                  ...billingInfo,
+                  cardNumber: formatCardNumberForInput(e.target.value)
+                })}
                 className="w-full border-b-2 border-black bg-transparent px-0 py-2 focus:outline-none focus:border-[#D0FF00]"
                 required
                 data-testid="card-number-input"

@@ -1,0 +1,21 @@
+Easy - Login: Case-Sensitive Username
+Easy - Login: Password Visibility Toggle Broken
+Easy - Mobile Menu: Close Button Hidden (Z-Index Issue)
+Easy - Hero Section: "Shop Now" Button Unclickable
+Easy - Search Bar: Enter Key Reloads Page
+Easy - Product Gallery: Second Thumbnail is Broken Link
+Easy - Size Selection: No Visual Feedback
+Easy - Cart Quantity: Allows Negative Numbers
+Easy - Footer: Returns Link Points to 404 Page
+Medium - Login: user1 Accepts Multiple Passwords
+Medium - Home: Cart Count Updates Only on Page Refresh
+Medium - Product Filters: Men/Women Categories Swapped
+Medium - Sorting: Price Sorts by String Instead of Number
+Medium - Add to Cart: Success Shows Error Toast
+Medium - Cart Total: Subtotal Ignores Last Item
+Medium - Checkout: "Billing Same as Shipping" Checkbox Does Nothing
+Medium - Cart Badge: Count Increments But Cart Appears Empty Until Reload
+Medium - Responsive Grid: Mobile Product Cards Too Narrow
+Hard - Payment Form: Card Number Drops First Digit
+Hard - Profile: Save Changes Button Has No onClick Handler
+Hard - mobile view hamburger menu is not working
